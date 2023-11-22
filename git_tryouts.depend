@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1700663009 source:c:\git_attemps\main.c
+	<stdio.h>
+	"module.h"
+
+1700662630 c:\git_attemps\module.h
+
+1700663015 source:c:\git_attemps\module.c
+	<stdio.h>
+	"module.h"
+

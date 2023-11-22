@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#include "module.h"
+
 #define VAR_NAME(VAR) #VAR
 
 void swap_variables(int* var1, int* var2)
@@ -13,6 +15,7 @@ int factorial_recursion(int n)
 {
 	if (n == 0)
 	{
+        printf("%s ", __func__);
 		return 1;
 	}
 	else
@@ -21,7 +24,7 @@ int factorial_recursion(int n)
 	}
 }
 
-const char message[] = {"HelloWorld"};
+const char message[] = {"HelloWorld\n"};
 
 int __cdecl main(void)
 {
@@ -35,6 +38,9 @@ int __cdecl main(void)
 	swap_variables(&number_one, &number_two);
 	printf("swapped %s %d %s %d\n", VAR_NAME(number_one),
 	number_one, VAR_NAME(number_two), number_two);
+
+	printf("%d\n", factorial_recursion(4));
+	printf("%d\n", factorial_loop(4));
 
 	return 0;
 }
