@@ -13,27 +13,8 @@
  * 3)   Link all *.o files to create *.exe calling 'gcc -o app.exe name1.o up to nameX.o'
  * 4)   Call app.exe (for any linux bash you need to call ./app.exe - ./ prefix )
  */
+ 
 #define VAR_NAME(VAR) #VAR
-
-void swap_variables(int* var1, int* var2)
-{
-	int backup_var1 = *var1;
-	*var1 = *var2;
-	*var2 = backup_var1;
-}
-
-int factorial_recursion(int n)
-{
-	if (n == 0)
-	{
-        printf("%s ", __func__);
-		return 1;
-	}
-	else
-	{
-		return n*factorial_recursion(n-1);
-	}
-}
 
 const char message[] = {"HelloWorld\n"};
 
