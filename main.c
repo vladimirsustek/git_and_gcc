@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "stdio.h"
 
-int main(void)
+int __cdecl main(void)
 {
 	printf("HelloWorld");	
 }
