@@ -9,6 +9,18 @@ void swap_variables(int* var1, int* var2)
 	*var2 = backup_var1;
 }
 
+int factorial_recursion(int n)
+{
+	if (n = 0)
+	{
+		return 1;
+	}
+	else
+	{
+		return n*factorial_recursion(n-1);
+	}
+}
+
 const char message[] = {"HelloWorld"};
 
 int __cdecl main(void)
