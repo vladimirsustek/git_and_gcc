@@ -1,8 +1,7 @@
-#include <stdio.h>
+#include "stdio.h"
 
+int __cdecl main(void)
 const char message[] = {"HelloWorld"};
-
-int main(void)
 {
 	printf(message);	
 }
