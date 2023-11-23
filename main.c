@@ -18,6 +18,11 @@
 
 const char message[] = {"HelloWorld\n"};
 
+typedef struct list
+{
+	int variable;
+} list_s;
+
 int __cdecl main(void)
 {
 	int number_one = 1;
@@ -31,8 +36,7 @@ int __cdecl main(void)
 	printf("swapped %s %d %s %d\n", VAR_NAME(number_one),
 	number_one, VAR_NAME(number_two), number_two);
 
-	printf("%d\n", factorial_recursion(4));
-	printf("%d\n", factorial_loop(4));
+	printf("%d\n%d\n", factorial_recursion(4), factorial_loop(4));
 
 	return 0;
 }
