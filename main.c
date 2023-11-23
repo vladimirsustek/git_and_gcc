@@ -32,8 +32,8 @@ int __cdecl main(void)
 	printf("swapped %s %d %s %d\n", VAR_NAME(number_one),
 	number_one, VAR_NAME(number_two), number_two);
 
-	printf("%d\n", factorial_recursion(4));
-	printf("%d\n", factorial_loop(4));
+	printf("%d\n", factorial_recursion(5));
+	printf("%d\n", factorial_loop(5));
 	return 0;
 }
 
