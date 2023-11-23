@@ -19,6 +19,11 @@
 
 const char message[] = {"HelloWorld\n"};
 
+typedef struct list
+{
+	int variable;
+} list_s;
+
 int __cdecl main(void)
 {
 	int number_one = 1;
