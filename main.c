@@ -13,7 +13,8 @@
  * 3)   Link all *.o files to create *.exe calling 'gcc -o app.exe name1.o up to nameX.o'
  * 4)   Call app.exe (for any linux bash you need to call ./app.exe - ./ prefix )
  */
- 
+
+
 #define VAR_NAME(VAR) #VAR
 
 const char message[] = {"HelloWorld\n"};
@@ -33,7 +34,6 @@ int __cdecl main(void)
 
 	printf("%d\n", factorial_recursion(4));
 	printf("%d\n", factorial_loop(4));
-
 	return 0;
 }
 
